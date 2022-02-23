@@ -40,9 +40,9 @@ users = {
       "species": "parrot"
     },
     {
-      "name": "fluffy"
-      "species": "dog"
-    }
+     "name": "Fluffy",
+     "species": "dog"
+     }
   ]
   },
   "Avril": {
@@ -55,11 +55,11 @@ users = {
         "species": "snake"
       }
     ]
-  }
+  },
   "Max": {
-    "twitter": "madmax99"
-    "lottery_numbers": [10, 15, 7, 3, 27, 31]
-    "home_town": "falkirk"
+    "twitter": "madmax99",
+    "lottery_numbers": [10, 15, 7, 3, 27, 31],
+    "home_town": "falkirk",
     "pets": [
       {
         "name": "Billy",
@@ -68,11 +68,11 @@ users = {
       {
         "name": "Arthur",
         "species": "cat"
-      }
-      }
+      }  
     ]
   }
 }
+
 
 
 
@@ -83,15 +83,15 @@ print(users["Erik"]["home_town"])
 
 print(users["Erik"]["lottery_numbers"])
 
-# print(users["Avril"]["pets"]["species"])
+print(users["Avril"]["pets"][0]["species"])
 
 print(min(users["Erik"]["lottery_numbers"]))
 
 for number in users["Avril"]["lottery_numbers"]:
   if number % 2 == 0:
-    print(number, end=(" "))
+    print(number, end = (" "))
 
-users["Erik"]["lottery_numbers"]= 18, 34, 8, 11, 24, 7
+users["Erik"]["lottery_numbers"]= [18, 34, 8, 11, 24, 7]
 
 users["Erik"]["home_town"] = "Edinburgh"
 

@@ -13,13 +13,27 @@ united_kingdom = [
     "name": "England",
     "population": 53010000,
     "capital": "London"
+  },
+  {
+    "name": "Northen Island",
+    "capital": "Belfast",
+    "population": 1811000
   }
 ]
 
-united_kingdom["captial"] = "swansea"
+united_kingdom[1]["capital"] = "Cardiff"
 
 
-print(united_kingdom)
+
+for country in united_kingdom:
+  print(country["name"])
+
+total_pop = 0
+
+for country in united_kingdom:
+  total_pop += country["population"]
+  
+print(total_pop)
 # 1. Change the capital of Wales from `"Swansea"` to `"Cardiff"`.
 # 2. Create a dictionary for Northern Ireland and add it to the `united_kingdom` list (The capital is Belfast, and the population is 1,811,000).
 # 3. Use a loop to print the names of all the countries in the UK.
